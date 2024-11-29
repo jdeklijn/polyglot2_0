@@ -3,4 +3,54 @@
     Author     : Johan
 */
 
-body {background-color: whitesmoke;}
+body {
+    background-color: goldenrod;
+    margin: 0;
+    font-family: serif;
+}
+/* 1, Name and logo */
+header {
+    border-bottom: 3px solid #ddd
+}
+/* 2, Progress bar */
+section{
+    border-bottom: 3px solid #ddd
+}
+
+/* 3, Progressbar total */
+
+/* 4, Sidebar menu */
+nav{
+    display: none;
+}
+
+/* 5, Excercise space */
+main{
+    border-bottom: 3px solid #ddd
+}
+.exercise-space {
+    height: calc(100vh - 250px); /* Adjust for header, footer, and progress bars */
+}
+/* 6, Quickaccess menu */
+footer{
+    border-bottom: 3px solid #ddd
+}
+
+/* 7, User keyboard space*/
+
+/* 8, Topbar userbutton*/
+
+@media (min-width: 768px) { /*  tablet / netbook */
+    .nav {
+        display: block;
+    }
+    .exercise-space {
+        height: calc(100vh - 300px); 
+    }
+}
+
+@media (min-width: 992px) {  /* laptop / PC */
+    .exercise-space {
+        height: calc(100vh - 320px);
+    }
+}
